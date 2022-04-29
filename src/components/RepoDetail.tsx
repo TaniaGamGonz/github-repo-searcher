@@ -1,10 +1,16 @@
-import React from 'react'
+
+import Repo from '../interfaces/RepoInterface';
 import '../styles/components/RepoDetail.css';
 
+type RepoDetailProps = {
+  repo: Repo
+}
 
-const RepoDetail = () => {
+const RepoDetail = ({repo}: RepoDetailProps) => {
   return (
-   <article></article>
+   <article>
+      <h4>{repo.name}</h4>
+   </article>
   )
 }
 
