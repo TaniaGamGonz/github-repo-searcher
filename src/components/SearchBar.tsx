@@ -1,4 +1,3 @@
-import { Method } from '@testing-library/react';
 import '../styles/components/SearchBar.css';
 
 type SearchBarProps = {

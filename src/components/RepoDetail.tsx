@@ -3,13 +3,17 @@ import Repo from '../interfaces/RepoInterface';
 import '../styles/components/RepoDetail.css';
 
 type RepoDetailProps = {
-  repo: Repo
+  repo : Repo,
 }
 
+
+
 const RepoDetail = ({repo}: RepoDetailProps) => {
+  const {name, url, description} = repo
   return (
    <article>
-      <h4>{repo.name}</h4>
+      <a href={url}>{name}</a>
+      <p>{description}</p>
    </article>
   )
 }
