@@ -1,8 +1,8 @@
 import React from "react";
-import './search-bar.css';
+import '../styles/components/SearchBar.css';
 
-const searchBar = () => {
-    const handleSubmit = (event: any) => {
+const SearchBar = () => {
+    const handleSubmit = (event: any): void => {
         event.preventDefault();
     }
 
@@ -14,4 +14,4 @@ const searchBar = () => {
     )
 }
 
-export default searchBar;
+export default SearchBar;
