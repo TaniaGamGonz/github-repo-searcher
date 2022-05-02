@@ -2,21 +2,14 @@
 import Repo from "../interfaces/RepoInterface";
 
  /**
-  * Calls to the api, has a header added 
+  * Calls to the api
   * @param name name of the repo to search
   * @returns an array of repos with the data cleaned
   */
 export const getReposByUser = (userName: string) => {
-    const bearer = `token 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`;
      userName = userName || 'TaniaGamGonz';
-    return fetch(`https://api.github.com/users/${userName}/repos`,{
-
-        headers: {
-          'Authorization': bearer,
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-      }
-    })
+    return fetch(`https://api.github.com/users/${userName}/repos` 
+    )
     .then((response)=> response.json())
     .then((response) => {
      const cleanedResponse =  response.map( (repo: any)=>{
