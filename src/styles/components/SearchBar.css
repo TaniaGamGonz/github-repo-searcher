@@ -1,0 +1,8 @@
+form > input{
+    width: 500px;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    border: 1px solid  #606470;
+    border-radius: 5px;
+    outline: none;
+}

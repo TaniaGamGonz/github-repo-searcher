@@ -1,0 +1,8 @@
+.repo-detail{
+    border-top: 1px solid #e4e4e4;
+    padding: 15px 0 5px;
+}
+
+.repo-detail > p {
+    font-size: 1.3rem;
+} 

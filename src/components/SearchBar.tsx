@@ -17,8 +17,7 @@ const SearchBar = ({setUserSearch, userSearch}: SearchBarProps) => {
 
     return(
        <form onSubmit={handleSubmit}>
-           <label htmlFor="search">Search</label>
-           <input value={userSearch} onChange={handleInput} type="search" name="search" id="search" placeholder="Type the username to see his repos"/>
+           <input value={userSearch} onChange={handleInput} type="search" name="search" id="search" placeholder="Find a repository..."/>
        </form>
     )
 }

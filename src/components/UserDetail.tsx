@@ -9,11 +9,11 @@ const UserDetail = ({user}: UserDetailProps) => {
     return (
      <article>
        <img src={img} alt={`${name}'s avatar`} />
-       <h3>{name}</h3>
-       <a href={`mailto:${email}`}>{email}</a>
+       <h3 className='user__name'>{name}</h3>
+      {email ?  <a href={`mailto:${email}`}>{email}</a> : <p>The email of this user is not avaliable</p>}
        <span>{location}</span>
-       <p>{bio}</p>
-       <small>{followers}</small>
+      { bio ?  <p>{bio}</p> : <p>This user hasn't a bio yet.</p> }
+       <small>followers {followers}</small>
      </article>
     )
   }

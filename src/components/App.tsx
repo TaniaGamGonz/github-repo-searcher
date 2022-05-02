@@ -10,30 +10,36 @@ import Repo from '../interfaces/RepoInterface';
 import User from '../interfaces/UserInterface';
 import '../styles/components/App.css';
 //Api calls
-import {getRepos}  from '../services/getRepos';
+import { getReposByUser } from '../services/getReposByUser';
 import {getUser}  from '../services/getUser';
 
 
 function App() {
  const [reposList, setReposList] = useState([] as Repo[]);
- const [ userSearch, setUserSearch] = useState('' as string)
- const [ user, setUser ] = useState({} as User)
+ const [ userSearch, setUserSearch] = useState('' as string);
+ const [ user, setUser ] = useState({} as User);
+
 
 
   useEffect( () =>{
-   getRepos(userSearch).then((repos: Repo[]) => setReposList(repos));
-  }, [userSearch]);
-  getUser('TaniaGamGonz').then((user: User)=> setUser(user))
+    getUser('TaniaGamGonz').then((user: User)=>
+      setUser(user))
+    getReposByUser(user.name).then((repos: Repo[])=> setReposList(repos))
+  }, []);
+ 
+
+ 
   return (
     <div className="App">
       <main>
-        <section>
-        <SearchBar setUserSearch={setUserSearch} userSearch={userSearch}></SearchBar>
-        <RepoList reposList={reposList}></RepoList>
-        </section>
-        <section>
+      <section className='user-info'>
           <UserDetail user={user}></UserDetail>
         </section>
+        <section className='repos-info'>
+        <SearchBar setUserSearch={setUserSearch} userSearch={userSearch}></SearchBar>
+        <RepoList reposList={reposList} userSearch={userSearch}></RepoList>
+        </section>
+   
       </main>
     </div>
   );
