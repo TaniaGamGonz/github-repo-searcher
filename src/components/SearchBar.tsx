@@ -6,10 +6,17 @@ type SearchBarProps = {
 }
 
 const SearchBar = ({setUserSearch, userSearch}: SearchBarProps) => {
-
+/**
+ * Prevents to recharge the page and manages the submit
+ * @param event 
+ */
     const handleSubmit = (event: any): void => {
         event.preventDefault();
     }
+/**
+ * Manages the input, sets the user's data on userSearch useState
+ * @param event the input data
+ */
     const handleInput = (event: any): void => {
         const userSearch: string = event.currentTarget.value;
         setUserSearch(userSearch);

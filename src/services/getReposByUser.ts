@@ -2,7 +2,7 @@
 import Repo from "../interfaces/RepoInterface";
 
  /**
-  * Calls to the api 
+  * Calls to the api, has a header added 
   * @param name name of the repo to search
   * @returns an array of repos with the data cleaned
   */
