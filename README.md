@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+## Github repo searcher
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+App created in React with typescript. The user can search repos by name, the list of repos are mine.
 
-## Available Scripts
+## Deployment
 
-In the project directory, you can run:
+To deploy this project run
 
-### `npm start`
+```bash
+  npm run
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Install github-repo-searcher with npm
 
-### `npm test`
+```bash
+  npm install github-repo-searcher
+  cd github-repo-searcher
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demo
 
-### `npm run build`
+You can try it on https://github-repo-searcher-by-name.herokuapp.com/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Future Improvements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Some future improvements i want to ser are:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Make another search input to change the user.
+- Build some tests.
+- Add info about the languages of the repos.
+- Add filters by languages.
 
-### `npm run eject`
+## Feedback
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This exercise was so exciting to do cause it's my first exercise in React with Typescript. It was difficult at the start but as I went along, I felt more and more comfortable. Also it's the first time I used github's API, I think that it's an easy API to try, even when I had some problems because due to an error I made too many requests and was denied access while I was still doing the development. I learned a lot about Typescript and React and I'm sure that in my next projects will be in Typescript!
